@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Bangers&family=Bebas+Neue&family=Carlito:wght@700&family=Castoro+Titling&family=Cormorant+Garamond&family=Fjalla+One&family=Gilda+Display&family=Gloock&family=Goblin+One&family=Holtwood+One+SC&family=Inter&family=Kanit&family=Konkhmer+Sleokchher&family=Koulen&family=Lato:wght@300;400;700&family=Lilita+One&family=Merriweather:ital@0;1&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;700&family=Oswald:wght@200;400&family=Permanent+Marker&family=Poppins:wght@100;200;400;500;600&family=Rajdhani:wght@700&family=Righteous&family=Roboto+Condensed:ital@1&family=Roboto:wght@300&family=Ruda:wght@600&family=Rufina&family=Russo+One&family=Share+Tech+Mono&family=Shrikhand&family=Slabo+27px&family=Squada+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000d29;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: #fff;
+    background-color: #060241;
+    padding: 0px 5px;
+    border-radius: 10px;
+}
+/* ======================= media queries 
+========================*/
+
+@media (max-width: 841px){
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        color: #fff;
+        background-color: #060241;
+        border-radius: 10px;
+    }
+
+    .main-card_info {
+        position: relative;
+        top: 20px;
+    }
+
+    .main-card_info h1 {
+        position: relative;
+        top: 10px;
+        font-size: 28px;
+    }
+
+    .main-card_info p {
+        color: #9b9b9b;
+        font-size: 15px;
+    }
+
+    .main-card_info span {
+        color: #265ccf;
+    }
+
+    .ratings {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+/* ======================= media queries 
+========================*/
+
+.main-card_info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.main-card_info span {
+    color: #265ccf;
+}
+
+.main-card_info p {
+    color: #9b9b9b;
+}
+
+
+.card-img img {
+    height: 380px;
+    width: 380px;
+    border-radius: 10px;
+}
+
+
+.card-ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.ratings {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.card-rating h4 {
+    color: #9b9b9b;
+    font-weight: 400;
+}
